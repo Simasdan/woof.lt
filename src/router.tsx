@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import MainLayout from './layouts/Main/MainLayout';
 import MainPage from './pages/MainPage/MainPage';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
@@ -6,7 +6,7 @@ import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import { RoutePath } from './types/routes';
 import SalonsPage from './pages/SalonsPage/SalonsPage';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
       path: RoutePath.ROOT,
       element: <MainLayout />,

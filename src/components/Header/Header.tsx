@@ -1,5 +1,6 @@
 import styles from './header.module.scss';
 import { useState } from 'react';
+import HeroImage from '../../assets/images/HeroImageWEBP.webp';
 import AppStoreIcon from '../../assets/icons/appStoreLogo.svg?react';
 import GooglePlayIcon from '../../assets/icons/googlePlayLogo.svg?react';
 import MainModal from '../MainModal/MainModal';
@@ -39,7 +40,8 @@ const Header = () => {
                     </div>
                 </div>
                 <figure className={styles.rightSideWrapper}>
-                    <img src='/assets/images/HeroImageWEBP.webp' alt="Woof Woof!"/>
+                    {/* <img src='/assets/images/HeroImageWEBP.webp' alt="Woof Woof!"/> */}
+                    <img src={HeroImage} alt="Woof Woof!"/>
                 </figure>
             </header>
 
